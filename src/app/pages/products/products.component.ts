@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import IProduct from 'app/interfaces/product';
 import { Product } from 'app/models/product';
+import { DataService } from 'app/services/data-sercive.service';
 
 const mokeCard: IProduct = {
   title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
@@ -17,7 +18,8 @@ const mokeCard: IProduct = {
 export class ProductsComponent {  
   public products: Product[] = []
 
-  constructor () {
+  constructor (private dataService: DataService) {
+    
     this.products.push(mokeCard)
   }
 
