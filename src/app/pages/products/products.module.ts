@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProductsComponent } from './products.component';
 import { ProductsRoutingModule } from './products-routing.module';
 import { ProductCardModule } from 'app/components/product-card/product-card.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -12,6 +13,7 @@ import { ProductCardModule } from 'app/components/product-card/product-card.modu
   ],
   imports: [
     CommonModule,
+    FormsModule,
     ProductCardModule,
     ProductsRoutingModule
   ]
