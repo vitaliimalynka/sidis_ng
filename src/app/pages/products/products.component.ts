@@ -38,4 +38,8 @@ export class ProductsComponent {
     this.subscription?.unsubscribe()
   }
 
+  public onCardSelected(product: Product) {
+    console.log(product)
+  }
+
 }

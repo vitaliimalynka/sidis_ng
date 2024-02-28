@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from 'app/models/product';
 
 @Component({
@@ -9,7 +9,11 @@ import { Product } from 'app/models/product';
 })
 export class ProductCardComponent {
   @Input() cardData: Product | null = null
+  @Output() cardSelected = new EventEmitter<Product>()
 
-  
-
+  onCardSelected() {
+    if(this.cardData) {
+      this.cardSelected.emit(this.cardData)
+    }
+  }
 }
