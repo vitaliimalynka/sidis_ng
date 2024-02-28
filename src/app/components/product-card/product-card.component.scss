@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: #e0ffff;
+  border-radius: 4px;
+  padding: 16px;
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  &-img {
+    max-height: 200px;
+    max-width: 100%;
+  }
+  &-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    height: 46px;
+    overflow: hidden;
+  }
+  &-price {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+  &-btn {
+    width: 100%;
+    border: none;
+    margin-top: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #10a7a7;
+    color: white;
+    font-size: 18px;
+  }
+}
+

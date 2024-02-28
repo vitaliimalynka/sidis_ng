@@ -1,1 +1,13 @@
-<p>products works!</p>
+<div class="container">
+  <input #searchInput
+    type="text" 
+    class="search"
+    (input)="searchProducts()">
+
+  <div class="products">
+    <app-product-card *ngFor="let product of filteredProducts"
+      [cardData]="product"
+      (cardSelected)="onCardSelected($event)">
+    </app-product-card>
+  </div>
+</div>
