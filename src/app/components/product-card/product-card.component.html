@@ -1,6 +1,10 @@
 <div class="card">
-  <img class="card-img" src="{{cardData?.image}}" alt="{{cardData?.title}}" />
-  <div class="card-title">{{cardData?.title}}</div>
-  <div class="card-price">{{cardData?.price}}</div>
-  <button class="card-btn">Придбати</button>
+  <div class="flex">
+    <img class="card-img" src="{{cardData?.image}}" alt="{{cardData?.title}}" />
+  </div>
+  <div class="flex">
+    <div class="card-title">{{cardData?.title}}</div>
+    <div class="card-price">${{cardData?.price}}</div>
+    <button class="card-btn">Придбати</button>
+  </div>
 </div>
